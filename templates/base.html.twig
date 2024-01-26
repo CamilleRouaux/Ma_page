@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap CSS -->
+		<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+		<!-- Our custom CSS -->
+		<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+		<link rel="stylesheet" href="{{ asset('css/burger.css') }}">
+
+		<title>
+			{% block title %}Camille Rouaux Point Com !{% endblock %}
+		</title>
+	</head>
+
+	{% block body %}
+
+	<div class="burger">
+  	<span></span>
+	</div>
+
+	<nav class="navbar">
+		<a href="#"class="logo">Logo</a>
+		<div class="nav-links">
+			<ul class="main">	
+				<li><a href="#">Home</a></li>
+				<li><a href="#sec">About</a></li>
+				<li><a href="#">Education</a></li>
+				<li><a href="#">Skills</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>	
+	</nav>
+
+	<div class="overlay"></div>
+
+	<section>
+		<img src="{{ asset('image/stars.png')}}" id="stars" alt="Stars">
+		<img src="{{ asset('image/moon.png')}}" id="moon" alt="Moon">
+		<a href="#sec" id="button">Hello !</a>
+		<img src="{{ asset('image/mountains_behind.png')}}" id="mountains_behind" alt="mountains behind">
+		<img src="{{ asset('image/mountains_front.png')}}" id="mountains_front" alt="mountains front">
+	</section>
+
+	<div class="sec" id="sec">
+			<h2>Hello there !</h2>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, consectetur. Architecto at molestiae vel iure aliquam voluptates maxime atque tempore laboriosam sequi exercitationem consequatur quos asperiores, obcaecati quaerat molestias numquam mollitia ipsam praesentium! Eveniet, odit ex aliquam necessitatibus officiis iure asperiores ullam distinctio beatae obcaecati rerum autem minus in tenetur neque! Libero laboriosam tenetur totam enim consequuntur? Quibusdam eaque culpa quaerat, voluptatum totam fuga architecto ducimus dolor ea amet. Quia id doloribus dolorum cupiditate. Fuga, nostrum eaque repudiandae quibusdam quisquam impedit exercitationem qui eveniet eum earum aut ab odio quidem hic voluptas quos ratione minima culpa magnam mollitia? Animi, voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur id assumenda voluptas ut ipsam, voluptate nemo facere blanditiis, consectetur dicta totam tempora quo placeat ex corporis mollitia libero dignissimos doloremque, minus provident earum? Deleniti dolorum ducimus aliquam ad expedita assumenda natus eveniet. Nesciunt ab dolorem atque assumenda error quidem provident. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ab, at consequuntur quas voluptatem odio. Laudantium nulla rerum dicta reiciendis sed illo quibusdam necessitatibus animi harum ipsum vel possimus ea, a vitae quas perspiciatis nostrum expedita porro consectetur itaque quam nisi! Consequuntur provident a omnis nesciunt magni libero nostrum iusto modi unde sequi pariatur, optio nemo eos assumenda placeat? Incidunt numquam quo fugit reprehenderit voluptates explicabo quae error autem est! Labore mollitia illo incidunt, architecto pariatur nesciunt neque blanditiis similique obcaecati, quas doloremque, molestiae sed repellendus harum tempore sequi libero consectetur ea ipsum velit eveniet! Aperiam nulla earum ab tempora.</p>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, consectetur. Architecto at molestiae vel iure aliquam voluptates maxime atque tempore laboriosam sequi exercitationem consequatur quos asperiores, obcaecati quaerat molestias numquam mollitia ipsam praesentium! Eveniet, odit ex aliquam necessitatibus officiis iure asperiores ullam distinctio beatae obcaecati rerum autem minus in tenetur neque! Libero laboriosam tenetur totam enim consequuntur? Quibusdam eaque culpa quaerat, voluptatum totam fuga architecto ducimus dolor ea amet. Quia id doloribus dolorum cupiditate. Fuga, nostrum eaque repudiandae quibusdam quisquam impedit exercitationem qui eveniet eum earum aut ab odio quidem hic voluptas quos ratione minima culpa magnam mollitia? Animi, voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur id assumenda voluptas ut ipsam, voluptate nemo facere blanditiis, consectetur dicta totam tempora quo placeat ex corporis mollitia libero dignissimos doloremque, minus provident earum? Deleniti dolorum ducimus aliquam ad expedita assumenda natus eveniet. Nesciunt ab dolorem atque assumenda error quidem provident. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ab, at consequuntur quas voluptatem odio. Laudantium nulla rerum dicta reiciendis sed illo quibusdam necessitatibus animi harum ipsum vel possimus ea, a vitae quas perspiciatis nostrum expedita porro consectetur itaque quam nisi! Consequuntur provident a omnis nesciunt magni libero nostrum iusto modi unde sequi pariatur, optio nemo eos assumenda placeat? Incidunt numquam quo fugit reprehenderit voluptates explicabo quae error autem est! Labore mollitia illo incidunt, architecto pariatur nesciunt neque blanditiis similique obcaecati, quas doloremque, molestiae sed repellendus harum tempore sequi libero consectetur ea ipsum velit eveniet! Aperiam nulla earum ab tempora.</p>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, consectetur. Architecto at molestiae vel iure aliquam voluptates maxime atque tempore laboriosam sequi exercitationem consequatur quos asperiores, obcaecati quaerat molestias numquam mollitia ipsam praesentium! Eveniet, odit ex aliquam necessitatibus officiis iure asperiores ullam distinctio beatae obcaecati rerum autem minus in tenetur neque! Libero laboriosam tenetur totam enim consequuntur? Quibusdam eaque culpa quaerat, voluptatum totam fuga architecto ducimus dolor ea amet. Quia id doloribus dolorum cupiditate. Fuga, nostrum eaque repudiandae quibusdam quisquam impedit exercitationem qui eveniet eum earum aut ab odio quidem hic voluptas quos ratione minima culpa magnam mollitia? Animi, voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur id assumenda voluptas ut ipsam, voluptate nemo facere blanditiis, consectetur dicta totam tempora quo placeat ex corporis mollitia libero dignissimos doloremque, minus provident earum? Deleniti dolorum ducimus aliquam ad expedita assumenda natus eveniet. Nesciunt ab dolorem atque assumenda error quidem provident. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ab, at consequuntur quas voluptatem odio. Laudantium nulla rerum dicta reiciendis sed illo quibusdam necessitatibus animi harum ipsum vel possimus ea, a vitae quas perspiciatis nostrum expedita porro consectetur itaque quam nisi! Consequuntur provident a omnis nesciunt magni libero nostrum iusto modi unde sequi pariatur, optio nemo eos assumenda placeat? Incidunt numquam quo fugit reprehenderit voluptates explicabo quae error autem est! Labore mollitia illo incidunt, architecto pariatur nesciunt neque blanditiis similique obcaecati, quas doloremque, molestiae sed repellendus harum tempore sequi libero consectetur ea ipsum velit eveniet! Aperiam nulla earum ab tempora.</p>
+	</div>
+
+{% endblock %}
+
+	{% block js %}
+		<script src="{{ asset('js/parallax.js') }}"></script>
+		<script src="{{ asset('js/burger.js') }}"></script>
+	{% endblock %}
+
+</html>
