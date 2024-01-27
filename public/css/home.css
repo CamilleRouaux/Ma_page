@@ -10,15 +10,7 @@ body {
 	min-height: 100vh;
 	overflow-x: hidden;
 	background: linear-gradient(#1D2E62, #7597de);
-}
-
-
-@media screen and (min-width: 960px) {
-	nav ul li a:hover{
-		background: #fff;
-		color: #2b1055;
-		border-radius: 20px;
-	}
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 section{
