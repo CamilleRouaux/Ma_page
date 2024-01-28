@@ -1,15 +1,15 @@
 .sec  {
 	color: white;
 	display: flex;
+	align-items: stretch;
 	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
+	justify-content: space-around;
 }
 
 .sec img {
 	width: 35%;
 	object-fit: contain;
-	align-self: self-start;
+	align-self: self-end;
 }
 
 .sec h5 {
