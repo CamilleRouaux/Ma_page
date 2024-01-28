@@ -1,0 +1,29 @@
+.sec  {
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sec img {
+	width: 35%;
+	object-fit: contain;
+	align-self: self-start;
+}
+
+.sec h5 {
+	align-self: center;
+}
+
+@media screen and (max-width: 545px) {
+	.sec{
+	padding: 19px;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	.sec h2 {
+    font-size: 2.5em;
+	}
+}
