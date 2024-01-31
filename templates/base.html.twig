@@ -27,11 +27,9 @@
 	
 	<nav class="navbar">
 		<div class="nav-links">
-			<ul class="main">	
-				<li><a href="#">Home</a></li>
+			<ul class="main">			
 				<li><a href="#sec">About</a></li>
 				<li><a href="#">Projects</a></li>
-				<li><a href="#">Education</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>	
@@ -47,15 +45,36 @@
 		<img src="{{ asset('image/mountains_front.png')}}" id="mountains_front" alt="mountains front">
 	</section>
 
-	<div class="sec" id="sec">
-			<h5>Moi c'est</h5>
-			<h2>Camille Rouaux</h2>
-			<img src="{{ asset('image/picture.png')}}" alt="Photo de Camille Rouaux">
-			<p>Je suis développeuse Back-End, et je fais partie du club des CMPVA (Club des Mangeurs de Pistaches Volées Anonymes)</p>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ad perspiciatis excepturi deserunt quam minus dolor dignissimos, sed cum nisi? Unde porro quibusdam, aut laborum vitae est rem et natus sunt accusantium. Asperiores autem quia nisi, ea numquam aperiam ab alias ipsam ipsum. Deserunt illum quis optio eum, maiores fugiat et, placeat ratione vel quasi, id possimus consequatur nemo harum. Nisi animi neque beatae magni amet, doloremque iure enim a iusto non facere maiores veritatis, quo voluptate exercitationem placeat assumenda obcaecati totam nam, consequuntur expedita. Voluptas, architecto. Sequi in ab non repellat ipsum eligendi ex labore pariatur vitae officiis! Reiciendis.</p>
-			
-			
-	</div>
+	<div class="purple">
+		<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+		<dotlottie-player class="svg" src="https://lottie.host/be0a8ac7-824c-430c-adec-de159a745ca8/00nNmb5WkL.json" background="transparent" speed="1" style="width: 100%; " loop autoplay></dotlottie-player>
+
+		<div class="sec" id="sec">
+			<div class="prez">
+				<div class="titre">
+					<h5>Moi c'est</h5>
+					<h2>Camille Rouaux</h2>
+					<p>Je suis <b>développeuse Back-End</b>, et je fais partie du club des CMPVA (Club des Mangeurs de Pistaches Volées Anonymes)</p>
+				</div>				
+				<img src="{{ asset('image/picture.png')}}" class="avatar" alt="Photo de Camille Rouaux">	
+			</div>		
+			<div class="allButtons">
+				<div class="socialButtons">
+					<a href="#" class="git">	
+						<img src="{{ asset('image/git.png')}}">
+					</a>
+					<a href="#" class="mail">
+						<img src="{{ asset('image/linkedin.png')}}">
+					</a>
+					<a href="#" class="linkedin">
+						<img src="{{ asset('image/mail.png')}}">
+					</a>
+				</div>
+				<button class="cv">CV</button>
+			</div>
+		</div>
+	</div>	
 
 {% endblock %}
 
