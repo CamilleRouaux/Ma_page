@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Our custom CSS -->
+		<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+		<link rel="stylesheet" href="{{ asset('css/nav.css') }}">
+		<link rel="stylesheet" href="{{ asset('css/about.css') }}">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+
+		<title>
+			{% block title %}Camille Rouaux Point Com !{% endblock %}
+		</title>
+	</head>
+
+	{% block body %}
+
+	<div class="burger">
+  	<span></span>
+	</div>
+
+	<a href="#" class="logo">Logo</a>
+	
+	<nav class="navbar">
+		<div class="nav-links">
+			<ul class="main">			
+				<li><a href="#sec">About</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>	
+	</nav>
+
+	<div class="overlay"></div>
+
+	<section>
+		<img src="{{ asset('image/stars.png')}}" id="stars" alt="Stars">
+		<img src="{{ asset('image/moon.png')}}" id="moon" alt="Moon">
+		<a href="#sec" id="button">Hello !</a>
+		<img src="{{ asset('image/mountains_behind.png')}}" id="mountains_behind" alt="mountains behind">
+		<img src="{{ asset('image/mountains_front.png')}}" id="mountains_front" alt="mountains front">
+	</section>
+
+	<div class="purple">
+		<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+		<dotlottie-player class="svg" src="https://lottie.host/be0a8ac7-824c-430c-adec-de159a745ca8/00nNmb5WkL.json" background="transparent" speed="1" style="width: 100%; " loop autoplay></dotlottie-player>
+
+		<div class="sec" id="sec">
+			<div class="prez">
+				<div class="titre">
+					<h5>Moi c'est</h5>
+					<h2>Camille Rouaux</h2>
+					<p>Je suis <b>développeuse Back-End</b>, et je fais partie du club des CMPVA (Club des Mangeurs de Pistaches Volées Anonymes)</p>
+				</div>				
+				<img src="{{ asset('image/picture.png')}}" class="avatar" alt="Photo de Camille Rouaux">	
+			</div>		
+			<div class="allButtons">
+				<div class="socialButtons">
+					<a href="#" class="git">	
+						<img src="{{ asset('image/git.png')}}">
+					</a>
+					<a href="#" class="mail">
+						<img src="{{ asset('image/linkedin.png')}}">
+					</a>
+					<a href="#" class="linkedin">
+						<img src="{{ asset('image/mail.png')}}">
+					</a>
+				</div>
+				<button class="cv">CV</button>
+			</div>
+		</div>
+	</div>	
+
+{% endblock %}
+
+	{% block js %}
+		<script src="{{ asset('js/parallax.js') }}"></script>
+		<script src="{{ asset('js/burger.js') }}"></script>
+	{% endblock %}
+
+</html>
