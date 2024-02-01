@@ -114,7 +114,6 @@
 		justify-content: space-evenly;
 		flex-direction: column-reverse;
 		align-items: center;
-		/* margin-top: 100px; */
 	}
 
 	.allButtons {
@@ -164,6 +163,14 @@
 		transition: all 0.3s ease-in-out;
 		cursor: pointer;
 		margin-top: 10px;
+		text-transform: uppercase;
+		text-decoration: none;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+		font-size: large;
+		font-weight: 500;
+		gap: 3%;
 	}
 
 	.cv:hover{
@@ -172,6 +179,10 @@
 		box-shadow: 2px 2px 20px #35118f;
 	}
 
+	.cv img{
+		height: 16px;
+		width: 16px;
+	}
 	
 
 /* } */
