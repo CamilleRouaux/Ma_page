@@ -42,10 +42,8 @@
     position: absolute;
     top: 42px;
     left: 50px;
-    font-size: 2em;
-    font-weight: bold;
-    color:#ffffff;
-    text-decoration: none;
+    width: 60px;
+    height: 60px;
     z-index: 1015;
   }
   
@@ -93,6 +91,7 @@
     height: 3px;
     background-color: #ffffff;
     outline: 1px solid transparent;
+    border-radius: 50px;
     -webkit-transition-property: background-color, -webkit-transform;
     -moz-transition-property: background-color, -moz-transform;
     -o-transition-property: background-color, -o-transform;
@@ -105,6 +104,7 @@
   .burger span::before, .burger span::after {
     position: absolute;
     content: "";
+    border-radius: 50px;
   }
   .burger span::before {
     top: -9px;
@@ -140,10 +140,8 @@
     position: absolute;
     top: 27px;
     left: 29px;
-    font-size: 2.5em;
-    font-weight: bold;
+    width: 60px;
     color:#ffffff;
-    text-decoration: none;
     z-index: 1008;
   }
 
