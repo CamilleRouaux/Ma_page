@@ -69,11 +69,11 @@
 					<a href="https://www.linkedin.com/in/camille-rouaux/" class="linkedin">
 						<img src="{{ asset('image/linkedin.png')}}">
 					</a>
-					<a href="#" class="mail">
+					<button class="mail" value="rouaux.camille@hotmail.fr">
 						<img src="{{ asset('image/mail.png')}}">
-					</a>
+					</button>
 				</div>
-			<a href="{{ asset('doc/CV_Rouaux_Camille.pdf')}}" download="CV_Rouaux_Camille.pdf" class="cv"><img src="{{ asset('image/download.png')}}" alt=""> Mon CV</a>
+				<a href="{{ asset('doc/CV_Rouaux_Camille.pdf')}}" download="CV_Rouaux_Camille.pdf" class="cv"><img src="{{ asset('image/download.png')}}" alt=""> Mon CV</a>
 			</div>
 		</div>
 	</div>	
@@ -83,6 +83,7 @@
 	{% block js %}
 		<script src="{{ asset('js/parallax.js') }}"></script>
 		<script src="{{ asset('js/burger.js') }}"></script>
+		<script src="{{ asset('js/mail_to_clipboard.js') }}"></script>
 	{% endblock %}
 
 </html>
