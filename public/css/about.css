@@ -118,14 +118,14 @@
 
 .cv{
 	width: 80%;
-	height: 30px;
+	height: 50px;
 	border-radius: 50px;
 	border: 0px;
 	color: #fff;
 	background: linear-gradient(36deg, #602FDD, #212350);
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
-	margin-top: 10px;
+	margin-top: 20px;
 	text-transform: uppercase;
 	text-decoration: none;
 	display: flex;
@@ -170,11 +170,8 @@
 	}
 
 	.allButtons {
-		margin-top: 1%;
-	}
-
-	.cv {
-		width: 70%;
+		width: 300px;
+		height: 300px;
 	}
 }
 
@@ -226,11 +223,7 @@
 
 @media screen and (min-width: 950px) {
 	.allButtons {
-    margin-top: -10%;
-	}
-
-	.cv {
-    width: 60%;
+    margin-top: -8%;
 	}
 }
 
@@ -244,24 +237,12 @@
 	}
 
 	.socialButtons {
-    justify-content: center;
 		margin-bottom: 5%;
 	}
 
-	.socialButtons a {
-    margin-left: 5%;
-	}
-
-	.mail{
-		margin-left: 5%;
-	}
-
 	.cv {
-    width: 28%;
     height: 50px;
-    margin-left: 5%;
 	}
-
 }
 
 
