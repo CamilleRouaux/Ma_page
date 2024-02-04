@@ -1,0 +1,12 @@
+.projects {
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.projects h2{
+	font-size: 2.5em;
+  color: #fff;
+	z-index: 1015;
+}

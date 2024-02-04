@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/nav.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/about.css') }}">
+		<link rel="stylesheet" href="{{ asset('css/projects.css') }}">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
 
@@ -31,7 +32,7 @@
 		<div class="nav-links">
 			<ul class="main">			
 				<li><a href="#sec">About</a></li>
-				<li><a href="#">Projects</a></li>
+				<li><a href=".projects">Projects</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>	
@@ -48,11 +49,13 @@
 	</section>
 
 	<div class="purple">
-		<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-		<dotlottie-player class="svg" src="https://lottie.host/be0a8ac7-824c-430c-adec-de159a745ca8/00nNmb5WkL.json" background="transparent" speed="1" style="width: 100%; " loop autoplay></dotlottie-player>
+		
 
 		<div class="sec" id="sec">
+			<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+			<dotlottie-player class="svg" src="https://lottie.host/be0a8ac7-824c-430c-adec-de159a745ca8/00nNmb5WkL.json" background="transparent" speed="1" style="width: 100%; " loop autoplay></dotlottie-player>
+
 			<div class="prez">
 				<div class="titre">
 					<h5>Moi c'est</h5>
@@ -74,6 +77,19 @@
 					</button>
 				</div>
 				<a href="{{ asset('doc/CV_Rouaux_Camille.pdf')}}" download="CV_Rouaux_Camille.pdf" class="cv"><img src="{{ asset('image/download.png')}}" alt=""> Mon CV</a>
+			</div>
+		</div>
+		<div class="projects" >
+			<h2>Mes projets :</h2>
+			<div class="projects_container">
+				<div class="project_card">
+					<div class="project_card_img">
+					</div>
+					<div class="project_card_body">
+						<h3 class="project_card_title"></h3>
+						<p class="project_card_description"></p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>	

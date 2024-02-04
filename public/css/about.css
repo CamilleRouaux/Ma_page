@@ -14,7 +14,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-content: flex-start;
+	align-content: stretch;
 	position: relative;
 	padding: 5% 40px;
 	height: 100vh;
@@ -24,11 +24,11 @@
 
 .prez {
 	display: flex;
-	height: 70%;
 	justify-content: space-evenly;
 	flex-direction: column-reverse;
 	align-items: center;
 	z-index: 1011;
+	margin-bottom: 10px;
 }
 
 .sec h2{
@@ -62,6 +62,7 @@
 	flex-direction: column;
 	width: 100%;
 	align-items: center;
+	z-index: 1015;
 }
 
 .socialButtons{
@@ -171,7 +172,7 @@
 
 	.allButtons {
 		width: 300px;
-		height: 300px;
+		height: 200px;
 	}
 }
 
@@ -214,10 +215,6 @@
 	.avatar {
     width: 35%;
     margin-left: 5%;
-	}
-
-	.allButtons {
-    margin-top: -15%;
 	}
 }
 
