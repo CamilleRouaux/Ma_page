@@ -10,3 +10,12 @@
   color: #fff;
 	z-index: 1015;
 }
+
+.project_card {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 420px;
+}
