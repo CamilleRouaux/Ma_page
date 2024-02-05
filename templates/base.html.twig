@@ -33,7 +33,7 @@
 		<div class="nav-links">
 			<ul class="main">			
 				<li><a href="#sec">About</a></li>
-				<li><a href=".projects">Projects</a></li>
+				<li><a href="#projects">Projects</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>	
@@ -80,15 +80,80 @@
 				<a href="{{ asset('doc/CV_Rouaux_Camille.pdf')}}" download="CV_Rouaux_Camille.pdf" class="cv"><img src="{{ asset('image/download.png')}}" alt=""> Mon CV</a>
 			</div>
 		</div>
-		<div class="skills">
-			<div class="front_skills">
+		<div class="skills_section">
+			<h2>Skills</h2>
+			<div class="all_skills">
+				<div class="front_skills">
+					<h3>Front-end</h3>
+					<ul class="skill_list">
+					<span>
+						<li class="skill">
+							<span class="skill_icon"><img src="{{ asset('image/js.png')}}" alt="logo JavaScript"></span>
+							<span class="skill_text">Javascript</span>
+						</li>
+					</span>
+						<span>
+							<li class="skill">
+								<span class="skill_icon"><img src="{{ asset('image/css.png')}}" alt="logo CSS3"></span>
+								<span class="skill_text">CSS3</span>
+							</li>
+						</span>
+						<span>
+							<li class="skill">
+								<span class="skill_icon"><img src="{{ asset('image/bootstrap.png')}}" alt="logo Bootstrap"></span>
+								<span class="skill_text">Bootstrap</span>
+							</li>
+						</span>
+					</ul>
+					
+				</div>
+
+				<div class="back_skills">
+					<h3>Back-end</h3>
+					<ul class="skill_list">
+						<span>
+							<li class="skill">
+								<span class="skill_icon"><img src="{{ asset('image/php.png')}}" alt="logo Php"></span>
+								<span class="skill_text">PHP</span>
+							</li>
+						</span>
+						<span>
+							<li class="skill">
+								<span class="skill_icon"><img src="{{ asset('image/symfony.png')}}" alt="logo Symfony"></span>
+								<span class="skill_text">Symfony</span>
+							</li>
+						</span>
+						<span>
+							<li class="skill">
+								<span class="skill_icon"><img src="{{ asset('image/laravel.png')}}" alt="logo Laravel"></span>
+								<span class="skill_text">Laravel</span>
+							</li>
+						</span>
+					</ul>
+				</div>
+
+				<div class="loading_skills">
+					<h3>Loading ..</h3>
+						<ul class="skill_list">
+							<span>
+								<li class="skill">
+									<span class="skill_icon"><img src="{{ asset('image/react.png')}}" alt="logo React"></span>
+									<span class="skill_text">React</span>
+								</li>
+							</span>
+							<span>
+								<li class="skill">
+									<span class="skill_icon"><img src="{{ asset('image/node.png')}}" alt="logo Node.js"></span>
+									<span class="skill_text">Node.js</span>
+								</li>
+							</span>
+						</ul>	
+				</div>
 			</div>
-			<div class="back_skills">
-			</div>
-			<div class="loading_skills"></div>
 		</div>
-		<div class="projects" >
-			<h2>Projets :</h2>
+
+		<div class="projects" id="projects" >
+			<h2>Projects </h2>
 			<div class="projects_container">
 				<div class="project_card">
 					<div class="project_card_img">
