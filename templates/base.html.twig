@@ -11,8 +11,8 @@
 		<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/nav.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/about.css') }}">
-		<link rel="stylesheet" href="{{ asset('css/projects.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/skills.css') }}">
+		<link rel="stylesheet" href="{{ asset('css/projects.css') }}">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
 
@@ -83,7 +83,7 @@
 		<div class="skills_section">
 			<h2>Skills</h2>
 			<div class="all_skills">
-				<div class="front_skills">
+				<div class="front_skills" id="skills_width">
 					<h3>Front-end</h3>
 					<ul class="skill_list">
 					<span>
@@ -108,7 +108,7 @@
 					
 				</div>
 
-				<div class="back_skills">
+				<div class="back_skills" id="skills_width">
 					<h3>Back-end</h3>
 					<ul class="skill_list">
 						<span>
@@ -132,23 +132,42 @@
 					</ul>
 				</div>
 
-				<div class="loading_skills">
-					<h3>Loading ..</h3>
-						<ul class="skill_list">
-							<span>
-								<li class="skill">
-									<span class="skill_icon"><img src="{{ asset('image/react.png')}}" alt="logo React"></span>
-									<span class="skill_text">React</span>
-								</li>
-							</span>
-							<span>
-								<li class="skill">
-									<span class="skill_icon"><img src="{{ asset('image/node.png')}}" alt="logo Node.js"></span>
-									<span class="skill_text">Node.js</span>
-								</li>
-							</span>
-						</ul>	
+				<div class="other_skills" id="skills_width">
+					<h3>Other</h3>
+					<ul class="skill_list">
+						<span>
+							<li class="skill">
+								<span class="skill_icon"><img src="{{ asset('image/git.png')}}" alt="logo GitHub"></span>
+								<span class="skill_text">GitHub</span>
+							</li>
+						</span>
+						<span>
+							<li class="skill">
+								<span class="skill_icon"><img src="{{ asset('image/node.png')}}" alt="logo Node.js"></span>
+								<span class="skill_text">Git</span>
+							</li>
+						</span>
+					</ul>	
 				</div>
+
+				<div class="loading_skills" id="skills_width">
+					<h3>Loading ..</h3>
+					<ul class="skill_list">
+						<span>
+							<li class="skill">
+								<span class="skill_icon"><img src="{{ asset('image/react.png')}}" alt="logo React"></span>
+								<span class="skill_text">React</span>
+							</li>
+						</span>
+						<span>
+							<li class="skill">
+								<span class="skill_icon"><img src="{{ asset('image/node.png')}}" alt="logo Node.js"></span>
+								<span class="skill_text">Node.js</span>
+							</li>
+						</span>
+					</ul>	
+				</div>
+
 			</div>
 		</div>
 

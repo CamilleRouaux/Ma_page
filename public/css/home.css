@@ -64,7 +64,7 @@ section img#mountains_front{
 	background: #fff;
 	color: #2b1055;
 	font-size: 1.1em;
-	z-index: 1008;
+	z-index: 9;
 	transform: translateY(100px);
 	padding: 8px 15px;
 }
