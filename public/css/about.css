@@ -3,6 +3,9 @@
 	background-color: #171625;  
 	position: relative;
 	z-index: 1011;
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px;
 }
 
 .svg {
