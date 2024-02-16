@@ -4,10 +4,11 @@
 	flex-direction: column;
 	align-items: center;
 	height: 80vh;
+	gap: 30px;
 }
 
 .skills_section h2{
-	font-size: 2.5rem;
+	font-size: 2rem;
 	color: #fff;
 	margin-bottom: 4%;
 	z-index: 1015;
@@ -35,7 +36,6 @@
 	height: 35px;
 	width: 90px;
 	border-radius: 50px;
-	/* background: linear-gradient(36deg, #602FDD, #212350); */
 	display: flex;
 	justify-content: center;
 	align-items: center;

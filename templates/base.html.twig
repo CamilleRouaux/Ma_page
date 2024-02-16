@@ -32,8 +32,9 @@
 	<nav class="navbar">
 		<div class="nav-links">
 			<ul class="main">			
-				<li><a href="#sec">About</a></li>
-				<li><a href="#projects">Projects</a></li>
+				<li><a href="#about_section" class="about" >About</a></li>
+				<li><a href="#skills_section">Skills</a></li>
+				<li><a href="#projects_section">Projects</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>	
@@ -44,24 +45,23 @@
 	<section>
 		<img src="{{ asset('image/stars.png')}}" id="stars" alt="Stars">
 		<img src="{{ asset('image/moon.png')}}" id="moon" alt="Moon">
-		<a href="#sec" id="button">Hello !</a>
+		<a href="#about_section" id="button">Hello !</a>
 		<img src="{{ asset('image/mountains_behind.png')}}" id="mountains_behind" alt="mountains behind">
 		<img src="{{ asset('image/mountains_front.png')}}" id="mountains_front" alt="mountains front">
 	</section>
 
-	<div class="purple">
+	<div class="main_section">
 		
-
-		<div class="sec" id="sec">
+		<div class="about_section" id="about_section">
 			<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
 			<dotlottie-player class="svg" src="https://lottie.host/be0a8ac7-824c-430c-adec-de159a745ca8/00nNmb5WkL.json" background="transparent" speed="1" style="width: 100%; " loop autoplay></dotlottie-player>
 
 			<div class="prez">
 				<div class="titre">
-					<h5>Moi c'est</h5>
+					<h5>Hey there ! I'm -</h5>
 					<h2>Camille Rouaux</h2>
-					<p>Je suis <b>développeuse Back-End</b>, et je fais partie du club des CMPVA (Club des Mangeurs de Pistaches Volées Anonymes)</p>
+					<p>I'm a <b>Backend Developper</b>, and i like to do some shenanigans with CSS and other Front features.</p>
 				</div>				
 				<img src="{{ asset('image/picture.png')}}" class="avatar" alt="Photo de Camille Rouaux">	
 			</div>		
@@ -80,7 +80,16 @@
 				<a href="{{ asset('doc/CV_Rouaux_Camille.pdf')}}" download="CV_Rouaux_Camille.pdf" class="cv"><img src="{{ asset('image/download.png')}}" alt=""> Mon CV</a>
 			</div>
 		</div>
-		<div class="skills_section">
+
+		<div class="scroll_arrow">
+			<a aria-label="Faire défiler vers le bas jusqu'à la section Skills">
+			<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+			<dotlottie-player src="https://lottie.host/01d7db93-93fe-426f-af86-10ffbf74f9c8/3qO6jI0mGQ.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></dotlottie-player>
+			</a>
+		</div>
+
+		<div class="skills_section" id="skills_section">
 			<h2>Skills</h2>
 			<div class="all_skills">
 				<div class="front_skills" id="skills_width">
@@ -171,7 +180,7 @@
 			</div>
 		</div>
 
-		<div class="projects" id="projects" >
+		<div class="projects_section" id="projects_section" >
 			<h2>Projects </h2>
 			<div class="projects_container">
 				<div class="project_card">
@@ -184,7 +193,6 @@
 						<div class="project_card_tags">
 							<span class="project_card_element">Symfony</span>
 							<span class="project_card_element">CSS3</span>
-							<span class="project_card_element">Bootstrap</span>
 							<span class="project_card_element">JavaScript</span>
 						</div>
 					</div>
@@ -206,6 +214,7 @@
 				</div>
 			</div>
 		</div>
+
 	</div>	
 
 {% endblock %}
