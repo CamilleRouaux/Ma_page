@@ -3,14 +3,14 @@
 	justify-content: space-evenly;
 	flex-direction: column;
 	align-items: center;
-	height: 80vh;
-	gap: 30px;
+	height: 100vh;
+	background-color: #171626;
 }
 
 .skills_section h2{
 	font-size: 2rem;
 	color: #fff;
-	margin-bottom: 4%;
+	margin-bottom: 10%;
 	z-index: 1015;
 	font-weight: 800;
 }
@@ -70,8 +70,7 @@
 
 @media screen and (min-width: 360px) {
 	.skills_section {
-		margin-top: auto;
-    height: fit-content;
+		justify-content: center;
 	}
 
 	.all_skills li {

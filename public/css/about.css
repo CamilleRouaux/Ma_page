@@ -1,11 +1,10 @@
 .main_section {
-	margin-top: -10px;
-	background-color: #171625;  
+	background-color: #17162587;
 	position: relative;
-	z-index: 1011;
+	z-index: 1007;
 	display: flex;
 	flex-direction: column;
-	row-gap: 50px;
+	align-items: center;
 }
 
 .svg {
@@ -20,10 +19,9 @@
 	justify-content: space-around;
 	align-content: stretch;
 	position: relative;
-	padding: 5% 40px;
+	padding: 15% 40px;
 	height: 100vh;
 	max-width: 1400px;
-	margin: -10px auto 0;
 }
 
 .prez {
@@ -36,7 +34,7 @@
 }
 
 .about_section h2{
-	font-size: 2.5em;
+	font-size: 1.5rem;
 	color: #fff;
 }
 
@@ -56,7 +54,7 @@
 }
 
 .avatar {
-	width: 70%;
+	width: 58%;
 	object-fit: contain;
 	align-self: center;
 }
@@ -64,9 +62,10 @@
 .allButtons {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	align-items: center;
+	justify-content: space-evenly;
 	z-index: 1015;
+	width: 100%;
 }
 
 .socialButtons{
@@ -99,7 +98,7 @@
 }
 
 .mail {
-	background-color:#171625 ;
+	background-color:#17162500;
 	border: 1px #fff solid;
 	border-radius: 50px;
 	padding: 2px;
@@ -122,21 +121,21 @@
 }
 
 .cv{
-	width: 80%;
-	height: 50px;
+	width: 55%;
+	height: 45px;
 	border-radius: 50px;
 	border: 0px;
 	color: #fff;
 	background: linear-gradient(36deg, #602FDD, #212350);
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
-	margin-top: 20px;
+	margin-top: 00px;
 	text-transform: uppercase;
 	text-decoration: none;
+	font-size: large;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: large;
 	font-weight: 500;
 	gap: 3%;
 }
@@ -156,8 +155,33 @@
 	position: relative;
 	width: 60px;
 	z-index: 1015;
-	bottom: 5.8rem;
+	bottom: 100px;
 	left: 42%;
+	cursor: pointer;
+}
+
+.scroll_arrow a{
+	z-index: 1016;
+}
+
+.purple_background_section {
+	background-color: #171626;
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+}
+
+@media screen and (min-width: 360px) {
+	.allButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+		justify-content: flex-start;
+    z-index: 1015;
+    width: 100%;
+    gap: 30px;
+	}
+
 }
 
 @media screen and (min-width: 545px) {
@@ -189,6 +213,11 @@
 }
 
 @media screen and (min-width: 700px) {
+
+	.prez {
+		justify-content: flex-start;
+	}
+
 	.avatar {
     width: 45%;
 		margin-bottom: 3%;
@@ -217,6 +246,19 @@
 		width: 25px;
     height: 25px;
 	}
+
+	.cv {
+    width: 60%;
+    height: 50px;
+	}
+
+	nav ul.main {
+		gap: 110px;
+	}
+
+	nav ul.main li a {
+		font-size: 2rem;
+	}
 }
 
 @media screen and (min-width: 850px) {
@@ -225,8 +267,12 @@
 	}
 
 	.avatar {
-    width: 35%;
+    width: 25%;
     margin-left: 5%;
+	}
+
+	.about_section {
+		align-content: center;
 	}
 }
 
@@ -241,17 +287,18 @@
     padding: 120px;
 	}
 
-	.avatar {
-    width: 30%;
-	}
-
 	.socialButtons {
 		margin-bottom: 5%;
 	}
-
-	.cv {
-    height: 50px;
-	}
 }
 
+@media screen and (min-width: 1200px) {
+	nav ul.main {
+    gap: 30px;
+	}
+
+	nav ul.main li a {
+    font-size: 1.5rem;
+	}
+}
 

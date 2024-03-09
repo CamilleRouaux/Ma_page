@@ -32,7 +32,7 @@
 	<nav class="navbar">
 		<div class="nav-links">
 			<ul class="main">			
-				<li><a href="#about_section" class="about" >About</a></li>
+				<li><a href="#about_section">About</a></li>
 				<li><a href="#skills_section">Skills</a></li>
 				<li><a href="#projects_section">Projects</a></li>
 				<li><a href="#">Contact</a></li>
@@ -44,8 +44,7 @@
 
 	<section>
 		<img src="{{ asset('image/stars.png')}}" id="stars" alt="Stars">
-		<img src="{{ asset('image/moon.png')}}" id="moon" alt="Moon">
-		<a href="#about_section" id="button">Hello !</a>
+		{# <img src="{{ asset('image/moon.png')}}" id="moon" alt="Moon"> #}
 		<img src="{{ asset('image/mountains_behind.png')}}" id="mountains_behind" alt="mountains behind">
 		<img src="{{ asset('image/mountains_front.png')}}" id="mountains_front" alt="mountains front">
 	</section>
@@ -53,9 +52,9 @@
 	<div class="main_section">
 		
 		<div class="about_section" id="about_section">
-			<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+			{# <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
-			<dotlottie-player class="svg" src="https://lottie.host/be0a8ac7-824c-430c-adec-de159a745ca8/00nNmb5WkL.json" background="transparent" speed="1" style="width: 100%; " loop autoplay></dotlottie-player>
+			<dotlottie-player class="svg" src="https://lottie.host/be0a8ac7-824c-430c-adec-de159a745ca8/00nNmb5WkL.json" background="transparent" speed="1" style="width: 100%; " loop autoplay></dotlottie-player> #}
 
 			<div class="prez">
 				<div class="titre">
@@ -81,139 +80,140 @@
 			</div>
 		</div>
 
-		<div class="scroll_arrow">
-			<a aria-label="Faire défiler vers le bas jusqu'à la section Skills">
+		{# <div class="scroll_arrow">
+			<a href="#skills_section" aria-label="Faire défiler vers le bas jusqu'à la section Skills">
 			<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
 			<dotlottie-player src="https://lottie.host/01d7db93-93fe-426f-af86-10ffbf74f9c8/3qO6jI0mGQ.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></dotlottie-player>
 			</a>
-		</div>
-
-		<div class="skills_section" id="skills_section">
-			<h2>Skills</h2>
-			<div class="all_skills">
-				<div class="front_skills" id="skills_width">
-					<h3>Front-end</h3>
-					<ul class="skill_list">
-					<span>
-						<li class="skill">
-							<span class="skill_icon"><img src="{{ asset('image/js.png')}}" alt="logo JavaScript"></span>
-							<span class="skill_text">Javascript</span>
-						</li>
-					</span>
+		</div> #}
+		<div class="purple_background_section">
+			<div class="skills_section" id="skills_section">
+				<h2>Skills</h2>
+				<div class="all_skills">
+					<div class="front_skills" id="skills_width">
+						<h3>Front-end</h3>
+						<ul class="skill_list">
 						<span>
 							<li class="skill">
-								<span class="skill_icon"><img src="{{ asset('image/css.png')}}" alt="logo CSS3"></span>
-								<span class="skill_text">CSS3</span>
+								<span class="skill_icon"><img src="{{ asset('image/js.png')}}" alt="logo JavaScript"></span>
+								<span class="skill_text">Javascript</span>
 							</li>
 						</span>
-						<span>
-							<li class="skill">
-								<span class="skill_icon"><img src="{{ asset('image/bootstrap.png')}}" alt="logo Bootstrap"></span>
-								<span class="skill_text">Bootstrap</span>
-							</li>
-						</span>
-					</ul>
-					
-				</div>
-
-				<div class="back_skills" id="skills_width">
-					<h3>Back-end</h3>
-					<ul class="skill_list">
-						<span>
-							<li class="skill">
-								<span class="skill_icon"><img src="{{ asset('image/php.png')}}" alt="logo Php" id="php_logo"></span>
-								<span class="skill_text">PHP</span>
-							</li>
-						</span>
-						<span>
-							<li class="skill">
-								<span class="skill_icon"><img src="{{ asset('image/symfony.png')}}" alt="logo Symfony" id="_logo"></span>
-								<span class="skill_text">Symfony</span>
-							</li>
-						</span>
-						<span>
-							<li class="skill">
-								<span class="skill_icon"><img src="{{ asset('image/laravel.png')}}" alt="logo Laravel"></span>
-								<span class="skill_text">Laravel</span>
-							</li>
-						</span>
-					</ul>
-				</div>
-
-				<div class="other_skills" id="skills_width">
-					<h3>Other</h3>
-					<ul class="skill_list">
-						<span>
-							<li class="skill">
-								<span class="skill_icon"><img src="{{ asset('image/git.png')}}" alt="logo GitHub"></span>
-								<span class="skill_text">GitHub</span>
-							</li>
-						</span>
-						<span>
-							<li class="skill">
-								<span class="skill_icon"><img src="{{ asset('image/node.png')}}" alt="logo Node.js"></span>
-								<span class="skill_text">Git</span>
-							</li>
-						</span>
-					</ul>	
-				</div>
-
-				<div class="loading_skills" id="skills_width">
-					<h3>Loading ..</h3>
-					<ul class="skill_list">
-						<span>
-							<li class="skill">
-								<span class="skill_icon"><img src="{{ asset('image/react.png')}}" alt="logo React"></span>
-								<span class="skill_text">React</span>
-							</li>
-						</span>
-						<span>
-							<li class="skill">
-								<span class="skill_icon"><img src="{{ asset('image/node.png')}}" alt="logo Node.js"></span>
-								<span class="skill_text">Node.js</span>
-							</li>
-						</span>
-					</ul>	
-				</div>
-
-			</div>
-		</div>
-
-		<div class="projects_section" id="projects_section" >
-			<h2>Projects </h2>
-			<div class="projects_container">
-				<div class="project_card">
-					<div class="project_card_img">
-						<img src="{{ asset('image/hortus.png')}}" alt="Hortus Plantae Floresque">
+							<span>
+								<li class="skill">
+									<span class="skill_icon"><img src="{{ asset('image/css.png')}}" alt="logo CSS3"></span>
+									<span class="skill_text">CSS3</span>
+								</li>
+							</span>
+							<span>
+								<li class="skill">
+									<span class="skill_icon"><img src="{{ asset('image/bootstrap.png')}}" alt="logo Bootstrap"></span>
+									<span class="skill_text">Bootstrap</span>
+								</li>
+							</span>
+						</ul>
+						
 					</div>
-					<div class="project_card_body">
-						<h3 class="project_card_title">Mon Portfolio</h3>
-						<p class="project_card_description">Projet personnel</p>
-						<div class="project_card_tags">
-							<span class="project_card_element">Symfony</span>
-							<span class="project_card_element">CSS3</span>
-							<span class="project_card_element">JavaScript</span>
+
+					<div class="back_skills" id="skills_width">
+						<h3>Back-end</h3>
+						<ul class="skill_list">
+							<span>
+								<li class="skill">
+									<span class="skill_icon"><img src="{{ asset('image/php.png')}}" alt="logo Php" id="php_logo"></span>
+									<span class="skill_text">PHP</span>
+								</li>
+							</span>
+							<span>
+								<li class="skill">
+									<span class="skill_icon"><img src="{{ asset('image/symfony.png')}}" alt="logo Symfony" id="_logo"></span>
+									<span class="skill_text">Symfony</span>
+								</li>
+							</span>
+							<span>
+								<li class="skill">
+									<span class="skill_icon"><img src="{{ asset('image/laravel.png')}}" alt="logo Laravel"></span>
+									<span class="skill_text">Laravel</span>
+								</li>
+							</span>
+						</ul>
+					</div>
+
+					<div class="other_skills" id="skills_width">
+						<h3>Other</h3>
+						<ul class="skill_list">
+							<span>
+								<li class="skill">
+									<span class="skill_icon"><img src="{{ asset('image/git.png')}}" alt="logo GitHub"></span>
+									<span class="skill_text">GitHub</span>
+								</li>
+							</span>
+							<span>
+								<li class="skill">
+									<span class="skill_icon"><img src="{{ asset('image/node.png')}}" alt="logo Node.js"></span>
+									<span class="skill_text">Git</span>
+								</li>
+							</span>
+						</ul>	
+					</div>
+
+					<div class="loading_skills" id="skills_width">
+						<h3>Loading ..</h3>
+						<ul class="skill_list">
+							<span>
+								<li class="skill">
+									<span class="skill_icon"><img src="{{ asset('image/react.png')}}" alt="logo React"></span>
+									<span class="skill_text">React</span>
+								</li>
+							</span>
+							<span>
+								<li class="skill">
+									<span class="skill_icon"><img src="{{ asset('image/node.png')}}" alt="logo Node.js"></span>
+									<span class="skill_text">Node.js</span>
+								</li>
+							</span>
+						</ul>	
+					</div>
+
+				</div>
+			</div>
+
+			<div class="projects_section" id="projects_section" >
+				<h2>Projects </h2>
+				<div class="projects_container">
+					<div class="project_card">
+						<div class="project_card_img">
+							<img src="{{ asset('image/hortus.png')}}" alt="Hortus Plantae Floresque">
+						</div>
+						<div class="project_card_body">
+							<h3 class="project_card_title">Mon Portfolio</h3>
+							<p class="project_card_description">Projet personnel</p>
+							<div class="project_card_tags">
+								<span class="project_card_element">Symfony</span>
+								<span class="project_card_element">CSS3</span>
+								<span class="project_card_element">JavaScript</span>
+							</div>
+						</div>
+					</div>
+					<div class="project_card">
+						<div class="project_card_img">
+							<img src="{{ asset('image/hortus.png')}}" alt="Hortus Plantae Floresque">
+						</div>
+						<div class="project_card_body">
+							<h3 class="project_card_title">Hortus Plantae Floresque</h3>
+							<p class="project_card_description">Site de partage sur le jardin et les plantes. Projet de fin d'étude réalisé en équipe</p>
+							<div class="project_card_tags">
+								<span class="project_card_element">Symfony</span>
+								<span class="project_card_element">CSS3</span>
+								<span class="project_card_element">Bootstrap</span>
+								<span class="project_card_element">JavaScript</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="project_card">
-					<div class="project_card_img">
-						<img src="{{ asset('image/hortus.png')}}" alt="Hortus Plantae Floresque">
-					</div>
-					<div class="project_card_body">
-						<h3 class="project_card_title">Hortus Plantae Floresque</h3>
-						<p class="project_card_description">Site de partage sur le jardin et les plantes. Projet de fin d'étude réalisé en équipe</p>
-						<div class="project_card_tags">
-							<span class="project_card_element">Symfony</span>
-							<span class="project_card_element">CSS3</span>
-							<span class="project_card_element">Bootstrap</span>
-							<span class="project_card_element">JavaScript</span>
-						</div>
-					</div>
-				</div>
 			</div>
-		</div>
+	</div>
 
 	</div>	
 
