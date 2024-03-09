@@ -1,4 +1,5 @@
 let burger = document.querySelector('.burger');
+let hideMenu = document.querySelector('.nav-links');
 
 burger.addEventListener('click', function(e){
 	e.preventDefault();
@@ -7,8 +8,6 @@ burger.addEventListener('click', function(e){
 	document.querySelector('nav').classList.toggle('show');
 	document.querySelector('body').classList.toggle('overflow');
 })
-
-let hideMenu = document.querySelector('.nav-links');
 
 hideMenu.addEventListener('click', function(){
 	document.querySelector('.burger').classList.remove('clicked');
