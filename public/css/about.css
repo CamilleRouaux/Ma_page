@@ -274,7 +274,7 @@
 
 @media screen and (min-width: 1100px) {
 	.about_section {
-    padding: 120px;
+    padding: 200px 120px 8%;
 	}
 
 	.socialButtons {
@@ -298,6 +298,12 @@
 
 	.avatar {
     width: 25%;
+	}
+}
+
+@media screen and (min-width: 1600px){
+	.avatar {
+    width: 20%;
 	}
 }
 
