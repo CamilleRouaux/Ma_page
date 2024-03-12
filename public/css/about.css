@@ -4,7 +4,7 @@
 	z-index: 1007;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	/* align-items: center; */
 }
 
 .svg {
@@ -21,7 +21,6 @@
 	position: relative;
 	padding: 15% 40px;
 	height: 100vh;
-	max-width: 1400px;
 }
 
 .prez {
@@ -192,7 +191,7 @@
 	.about_section p {
 		font-size: 1em;
 		color: #fff;
-		margin-top: 3%;
+		margin: 3% 3% 0 0;
 		z-index: 1011;
 	}
 
@@ -219,7 +218,7 @@
 	}
 
 	.avatar {
-    width: 45%;
+    width: 40%;
 		margin-bottom: 3%;
 	}
 
@@ -262,23 +261,14 @@
 }
 
 @media screen and (min-width: 850px) {
-	.prez {
-		flex-direction: row;
-	}
-
-	.avatar {
-    width: 25%;
-    margin-left: 5%;
-	}
-
 	.about_section {
 		align-content: center;
 	}
 }
 
 @media screen and (min-width: 950px) {
-	.allButtons {
-    margin-top: -8%;
+	.avatar {
+    width: 35%;
 	}
 }
 
@@ -299,6 +289,15 @@
 
 	nav ul.main li a {
     font-size: 1.5rem;
+	}
+
+	.prez {
+		flex-direction: row;
+    justify-content: space-evenly;
+	}
+
+	.avatar {
+    width: 25%;
 	}
 }
 
