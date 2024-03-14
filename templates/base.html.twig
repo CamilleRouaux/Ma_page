@@ -42,7 +42,8 @@
 		<div class="overlay"></div>
 
 		<section>
-			<img src="{{ asset('image/stars.png')}}" id="stars" alt="Stars">
+			<canvas id="space"></canvas>
+			{# <img src="{{ asset('image/stars.png')}}" id="stars" alt="Stars"> #}
 			<img src="{{ asset('image/mountains_behind.png')}}" id="mountains_behind" alt="mountains behind">
 			<img src="{{ asset('image/mountains_front.png')}}" id="mountains_front" alt="mountains front">
 		</section>
@@ -231,6 +232,7 @@
 
 	{% block js %}
 		<script src="{{ asset('js/parallax.js') }}"></script>
+		<script src="{{ asset('js/twinkling_stars.js') }}"></script>
 		<script src="{{ asset('js/burger.js') }}"></script>
 		<script src="{{ asset('js/mail_to_clipboard.js') }}"></script>
 	{% endblock %}
