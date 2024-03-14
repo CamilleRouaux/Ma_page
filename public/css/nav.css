@@ -92,6 +92,10 @@
   .navbar .nav-links {
     display: block;
   }
+
+  nav ul.main {
+    gap: 60px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
