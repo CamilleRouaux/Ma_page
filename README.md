@@ -6,4 +6,4 @@ Voici mon Portfolio, un projet responsive et accessible.
 
 ## Preview
 
-![Portfolio](/public/images/Portfolio.png)
+![Portfolio](/public/image/Portfolio.png)
