@@ -34,6 +34,50 @@
 	max-width: 470px;
 }
 
+.project_card_overlay{
+	position: absolute;
+	z-index: 2;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(3 7 20 / 18%);
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
+	transition: all .5s ease-in-out;
+}
+
+.project_card_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin-top: 1.5rem;
+	padding: 0.8rem 2rem;
+	background: linear-gradient(36deg, #602FDD, #212350);
+	border-radius: 3rem;
+	color: #d0cfe2;
+	text-align: center;
+	transition: all .5s ease-in-out;
+	text-decoration: none;
+	font-size: 1.2rem;
+	/* transform: translateY(40px); */
+}
+
+.project_card_overlay:hover{
+	opacity: 1;
+}
+
+.project_card_button:hover{
+	transform: translateY(-3px);
+	transition: all 0.3s ease-in-out;
+	box-shadow: 2px 2px 20px #35118f;
+}
+
 .project_card_img{
 	width: 100%;
 	height: 40%;
