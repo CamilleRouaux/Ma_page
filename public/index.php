@@ -33,7 +33,7 @@
 					<li><a href="#about_section">About</a></li>
 					<li><a href="#skills_section">Skills</a></li>
 					<li><a href="#projects_section">Projects</a></li>
-					<li><a href="#">Contact</a></li>
+					<!-- <li><a href="#">Contact</a></li> -->
 				</ul>
 			</div>	
 		</nav>
@@ -65,7 +65,7 @@
 				<div class="allButtons">
 					<div class="socialButtons">
 						<a href="https://github.com/CamilleRouaux" class="git" target="_blank">	
-							<img src="image/git.png">
+							<img src="image/github.png">
 						</a>
 						<a href="https://www.linkedin.com/in/camille-rouaux/" class="linkedin" target="_blank">
 							<img src="image/linkedin.png">
@@ -143,13 +143,13 @@
 							<ul class="skill_list">
 								<span>
 									<li class="skill">
-										<span class="skill_icon"><img src="image/git.png" alt="logo GitHub"></span>
+										<span class="skill_icon"><img src="image/github.png" alt="logo GitHub"></span>
 										<span class="skill_text">GitHub</span>
 									</li>
 								</span>
 								<span>
 									<li class="skill">
-										<span class="skill_icon"><img src="image/node.png" alt="logo Node.js"></span>
+										<span class="skill_icon"><img src="image/git.png" alt="logo Node.js"></span>
 										<span class="skill_text">Git</span>
 									</li>
 								</span>
@@ -193,6 +193,9 @@
 									<span class="project_card_element">JavaScript</span>
 								</div>
 							</div>
+              <div class="project_card_overlay">
+                <a href="https://github.com/CamilleRouaux/Portfolio" class="project_card_button" target="_blank">Voir</a>
+              </div>
 						</div>
 						<div class="project_card">
 							<div class="project_card_img">
@@ -208,6 +211,9 @@
 									<span class="project_card_element">API</span>
 								</div>
 							</div>
+              <div class="project_card_overlay">
+                <a href="https://github.com/CamilleRouaux/LOTR-Encyclopedia" class="project_card_button" target="_blank">Voir</a>
+              </div>
 						</div>
 						<div class="project_card">
 							<div class="project_card_img">
@@ -223,6 +229,9 @@
 									<span class="project_card_element">JavaScript</span>
 								</div>
 							</div>
+              <div class="project_card_overlay">
+                <a href="https://github.com/CamilleRouaux/Hortus_Plantae_Floresque" class="project_card_button" target="_blank">Voir</a>
+              </div>
 						</div>
 					</div>
 				</div>
@@ -230,7 +239,7 @@
         <footer>
           <div class="footerSocialButtons">
             <a href="https://github.com/CamilleRouaux" class="git_footer" target="_blank">	
-              <img src="image/git.png">
+              <img src="image/github.png">
             </a>
             <a href="https://www.linkedin.com/in/camille-rouaux/" class="linkedin_footer" target="_blank">
               <img src="image/linkedin.png">
